@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "a4144ebb-6776-42f8-ad1e-b5fe6405ead9",
+		"name": "API_jobTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get_posts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/jobTask2/public/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"jobTask2",
+						"public",
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "regster-with -JWT",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2pvYlRhc2syXC9wdWJsaWNcL2FwaVwvcmVnaXN0ZXIiLCJpYXQiOjE2MjgzNjY5NjYsImV4cCI6MTYyODM3MDU2NiwibmJmIjoxNjI4MzY2OTY2LCJqdGkiOiJGS0cwazFoZ1JpYmJ2enRTIiwic3ViIjo3LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.Sw5LOYbVKV4m3lIBNbRZWaZTTEkmnY8fJ6D3kOYntI8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "api_password",
+							"value": "EIuU70poYG45lddW92TzE4hiZ",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "shimaa123",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "shimaaAsd123@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "shimaaAsd123",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "shimaaAsd123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/jobTask2/public/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"jobTask2",
+						"public",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-jwt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "shimaaAsd123",
+							"type": "text"
+						},
+						{
+							"key": "api_password",
+							"value": "EIuU70poYG45lddW92TzE4hiZ",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "shimaaAsd123@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/jobTask2/public/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"jobTask2",
+						"public",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
